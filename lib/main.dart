@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/view/splashscreen.dart';
 
+
+
 main() {
   runApp(MyApp());
 }
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Splashscreen(),
+      debugShowCheckedModeBanner: false,
+      home: Splashscreen(),
     );
   }
 }
