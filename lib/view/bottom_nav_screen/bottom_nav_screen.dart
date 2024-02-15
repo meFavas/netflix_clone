@@ -3,7 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/view/commingsoon_screen/commingsoon.dart';
+import 'package:netflix_clone/view/downloadscreen/downloadscreen.dart';
 import 'package:netflix_clone/view/homescreen/homescreen.dart';
+import 'package:netflix_clone/view/morescreen/morescreen.dart';
 
 import 'package:netflix_clone/view/searchscreen/searchscreen.dart';
 
@@ -18,10 +20,9 @@ class _BottomnavscreenState extends State<Bottomnavscreen> {
   List<Widget> screens = [
     Homescreen(),
     Searchscreen(),
-   Commingsoon(),
-    Center(
-      child: Text("screen2"),
-    ),
+    Commingsoon(),
+    Downloadscreen(),
+    Morescreen(),
   ];
   int selectedIndex = 0;
 
@@ -49,6 +50,7 @@ class _BottomnavscreenState extends State<Bottomnavscreen> {
               icon: Icon(Icons.video_library), label: "coming soon"),
           BottomNavigationBarItem(
               icon: Icon(Icons.download), label: "download"),
+          BottomNavigationBarItem(icon: Icon(Icons.menu), label: "more"),
         ],
       ),
     );

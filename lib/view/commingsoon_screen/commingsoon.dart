@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/utils/database.dart';
 import 'package:netflix_clone/utils/image_constants.dart';
-import 'package:netflix_clone/view/homescreen/widgets/commingsoon_customcard.dart';
-import 'package:netflix_clone/view/homescreen/widgets/notificationscreencard.dart';
+import 'package:netflix_clone/view/commingsoon_screen/commingsoon_customcard.dart';
+import 'package:netflix_clone/view/commingsoon_screen/notificationscreencard.dart';
 
 class Commingsoon extends StatefulWidget {
   const Commingsoon({super.key});
@@ -55,12 +55,20 @@ class _CommingsoonState extends State<Commingsoon> {
                 ),
               ),
             ),
-            ListView.builder(
+            ListView.separated(
               padding: EdgeInsets.symmetric(vertical: 20),
-              itemCount: 3,
+              itemCount: Dbdata.notificationMovieList.length,
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              itemBuilder: (context, index) => Notificationscreencard(),
+              itemBuilder: (context, index) => Notificationscreencard(
+                imageurl: Dbdata.notificationMovieList[index]["imageUrl"],
+                title:  Dbdata.notificationMovieList[index]["title"],
+                des: Dbdata.notificationMovieList[index]["description"], 
+                subtitle:  Dbdata.notificationMovieList[index][ "subtitle"],
+              ),
+              separatorBuilder: (context, index) => SizedBox(
+                height: 20,
+              ),
             )
           ],
         ),

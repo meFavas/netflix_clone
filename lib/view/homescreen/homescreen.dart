@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/utils/database.dart';
 import 'package:netflix_clone/utils/image_constants.dart';
-import 'package:netflix_clone/view/homescreen/widgets/custom_moviecard.dart';
+import 'package:netflix_clone/view/homescreen/custom_moviecard.dart';
 
 class Homescreen extends StatelessWidget {
   const Homescreen({super.key});
@@ -59,7 +59,7 @@ class Homescreen extends StatelessWidget {
                   bottom: 0,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    // mainAxisAlignment: MainAxisAlignment.center,
+                   
                     children: [
                       Center(
                         child: Padding(
