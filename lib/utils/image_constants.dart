@@ -10,4 +10,5 @@ class Imageconstants {
   static const String poster = "assets/images/Rectangle 26.png";
   static const String nlogo = "assets/images/logos_netflix-icon.png";
   static const String top10 = "assets/images/Group 16.png";
+  static const String bellicon = "assets/images/Group 49.png";
 }

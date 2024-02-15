@@ -25,4 +25,20 @@ class Dbdata {
     "https://images.pexels.com/photos/13130410/pexels-photo-13130410.jpeg?auto=compress&cs=tinysrgb&w=600",
     "https://images.pexels.com/photos/13140538/pexels-photo-13140538.jpeg?auto=compress&cs=tinysrgb&w=600",
   ];
+  static List<Map<String, dynamic>> moviesdata = [
+    {
+      "imageUrl":
+          "https://images.pexels.com/photos/13140538/pexels-photo-13140538.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "moviename": "the social network",
+      "title": "EL Chapo",
+      "date": "Jan 16",
+    },
+    {
+      "imageUrl":
+          "https://images.pexels.com/photos/12838778/pexels-photo-12838778.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "moviename": "Inception",
+      "title": "Inception",
+      "date": "Feb 14",
+    },
+  ];
 }

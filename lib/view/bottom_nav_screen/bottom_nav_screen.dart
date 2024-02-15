@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
+import 'package:netflix_clone/view/commingsoon_screen/commingsoon.dart';
 import 'package:netflix_clone/view/homescreen/homescreen.dart';
 
 import 'package:netflix_clone/view/searchscreen/searchscreen.dart';
@@ -17,9 +18,7 @@ class _BottomnavscreenState extends State<Bottomnavscreen> {
   List<Widget> screens = [
     Homescreen(),
     Searchscreen(),
-    Center(
-      child: Text("screen2"),
-    ),
+   Commingsoon(),
     Center(
       child: Text("screen2"),
     ),
