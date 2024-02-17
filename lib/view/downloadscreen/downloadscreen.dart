@@ -16,12 +16,15 @@ class Downloadscreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "smart Downloads",
-                style: TextStyle(
-                    color: Colorconstsnts.mucustomwhite,
-                    fontSize: 15,
-                    fontWeight: FontWeight.normal),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Text(
+                  "smart Downloads",
+                  style: TextStyle(
+                      color: Colorconstsnts.mucustomwhite,
+                      fontSize: 15,
+                      fontWeight: FontWeight.normal),
+                ),
               ),
               SizedBox(
                 height: 30,
