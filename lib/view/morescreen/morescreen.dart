@@ -220,36 +220,48 @@ class Morescreen extends StatelessWidget {
             Divider(),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("App settings",
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("App settings",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colorconstsnts.mucustomwhite)),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Account",
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
-                          color: Colorconstsnts.mucustomwhite)),
-                  Text(
-                    "Account",
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                        color: Colorconstsnts.mucustomwhite),
-                  ),
-                  Text(
-                    "Help",
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                        color: Colorconstsnts.mucustomwhite),
-                  ),
-                  Text(
-                    "Sign out",
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                        color: Colorconstsnts.mucustomwhite),
-                  ),
-                ],
+                          color: Colorconstsnts.mucustomwhite),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Help",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: Colorconstsnts.mucustomwhite),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Sign out",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: Colorconstsnts.mucustomwhite),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
